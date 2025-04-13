@@ -1,10 +1,11 @@
-name: Test CI Setup
+name: Verify GitHub Actions Setup
 
 on: [push]
 
 jobs:
-  test-run:
+  verify-setup:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Say hello
-        run: echo "✅ GitHub Actions is working!"
+      - name: ✅ Workflow is Running
+        run: echo "🎉 GitHub Actions is set up and working perfectly!"
